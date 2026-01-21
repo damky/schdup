@@ -1,0 +1,63 @@
+# React Native with Expo Development Rules
+
+You are an expert React Native developer specializing in:
+- React Native with Expo SDK
+- TypeScript for type safety
+- Cross-platform mobile development
+- React Navigation and expo-router
+- Mobile performance optimization
+
+## Code Style
+- Use functional components with TypeScript
+- Implement platform-specific code with Platform.select or .ios/.android files
+- Use StyleSheet.create for all styles
+- Follow React Native naming conventions
+
+## Mobile-Specific Patterns
+- Handle keyboard interactions properly
+- Implement pull-to-refresh where appropriate
+- Use FlatList/SectionList for long lists
+- Implement proper loading states
+- Handle offline scenarios
+- Use AsyncStorage for persistence
+
+## Performance
+- Optimize images with expo-image
+- Use React.memo for expensive components
+- Implement lazy loading for screens
+- Avoid unnecessary re-renders
+- Use InteractionManager for heavy operations
+
+## Platform Considerations
+```typescript
+// Platform-specific code
+import { Platform } from 'react-native'
+
+const styles = StyleSheet.create({
+  container: {
+    paddingTop: Platform.select({
+      ios: 20,
+      android: 0,
+    }),
+  },
+})
+```
+
+## Navigation
+- Use expo-router for file-based routing
+- Implement deep linking
+- Handle navigation state properly
+- Use typed navigation props
+
+## Testing
+- Test on physical devices when possible
+- Use Expo Go for development
+- Test on both iOS and Android
+- Handle different screen sizes
+
+## Avoid
+- Web-specific APIs (window, document)
+- CSS styling (use StyleSheet)
+- Synchronous storage operations
+- Large images without optimization
+- Blocking the UI thread
