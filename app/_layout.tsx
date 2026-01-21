@@ -15,6 +15,7 @@ export default function RootLayout() {
         tabBarStyle: { backgroundColor: '#FFFFFF' },
       }}
     >
+      <Tabs.Screen name="index" options={{ title: 'Home' }} />
       <Tabs.Screen name="backlog" options={{ title: 'Backlog' }} />
       <Tabs.Screen name="schedule" options={{ title: 'Schedule' }} />
       <Tabs.Screen name="capture" options={{ title: 'Capture' }} />
