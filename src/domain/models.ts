@@ -12,6 +12,11 @@ export type ScheduleStatus =
   | 'failed'
   | 'cancelled'
 
+export type UploadInterval = {
+  daysOfWeek: number[]
+  times: string[]
+}
+
 export type MediaSource = 'camera' | 'library' | 'files'
 
 export interface AccountLink {

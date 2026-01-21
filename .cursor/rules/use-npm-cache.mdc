@@ -1,0 +1,8 @@
+---
+name: use-npm-cache
+description: Instructs the agent to use npm cache in the sandbox
+---
+
+# Overview
+
+When running code in the sandbox, try switching npm cache to workspace to avoid root-owned permissions issues.

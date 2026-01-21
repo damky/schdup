@@ -4,6 +4,7 @@ export const STORAGE_KEYS = {
   accounts: 'accounts',
   mediaItems: 'media_items',
   scheduleItems: 'schedule_items',
+  uploadInterval: 'upload_interval',
 }
 
 export const readJson = async <T>(key: string, fallback: T): Promise<T> => {
