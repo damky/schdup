@@ -56,3 +56,4 @@ Build a scheduling assistant that automates backlog-to-upload workflows so creat
 ## Future plans
 
 - Add a tutorial/app walkthrough that guides users through setting intervals, scheduling a video, and completing basic app flows.
+- Add basic video editing within the app so users can record multi-clip videos
